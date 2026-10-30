@@ -1,0 +1,2022 @@
+# Python Full Course — Beginner to Advanced
+
+Here is a **complete Python course roadmap with theory, syntax, examples, and interview focus**, arranged from **zero → advanced → AI/ML-ready Python**.
+
+---
+
+# MODULE 1 — Python Fundamentals
+
+## 1. What is Python?
+
+Python is a **high-level, interpreted, general-purpose programming language** known for its simple syntax and extensive library ecosystem.
+
+### Main features
+
+- Easy to learn
+- Dynamically typed
+- Interpreted
+- Object-oriented
+- Supports functional programming
+- Cross-platform
+- Open source
+- Large standard library
+- Huge third-party ecosystem
+
+### Applications
+
+- Web development
+- AI and Machine Learning
+- Data Science
+- Automation
+- Cybersecurity
+- Desktop applications
+- APIs
+- Scientific computing
+
+---
+
+# 2. Installing and Running Python
+
+You can run Python using:
+
+- Python interpreter
+- VS Code
+- PyCharm
+- Jupyter Notebook
+- Google Colab
+
+Check installation:
+
+```bash
+python --version
+```
+
+Run a Python file:
+
+```bash
+python program.py
+```
+
+---
+
+# 3. Your First Python Program
+
+```python
+print("Hello, World!")
+```
+
+Output:
+
+```text
+Hello, World!
+```
+
+`print()` displays information on the screen.
+
+---
+
+# 4. Comments
+
+Comments are ignored by Python.
+
+### Single-line comment
+
+```python
+# This is a comment
+print("Hello")
+```
+
+### Multi-line documentation/comment style
+
+```python
+"""
+This is a multi-line string.
+It can also serve as documentation.
+"""
+```
+
+---
+
+# MODULE 2 — Variables and Data Types
+
+## 5. What is a Variable?
+
+A variable is a name that refers to a value.
+
+```python
+name = "Darshit"
+age = 22
+salary = 50000
+```
+
+Python determines the type dynamically.
+
+```python
+x = 10
+print(type(x))
+```
+
+Output:
+
+```text
+<class 'int'>
+```
+
+---
+
+# 6. Python Data Types
+
+Important built-in types:
+
+### Numeric
+
+```python
+int
+float
+complex
+```
+
+Example:
+
+```python
+age = 22
+price = 99.50
+z = 2 + 3j
+```
+
+### Boolean
+
+```python
+is_student = True
+```
+
+### String
+
+```python
+name = "Darshit"
+```
+
+### Sequence
+
+```python
+list
+tuple
+range
+```
+
+### Mapping
+
+```python
+dict
+```
+
+### Set
+
+```python
+set
+frozenset
+```
+
+### None
+
+```python
+x = None
+```
+
+---
+
+# 7. Type Conversion
+
+### String to integer
+
+```python
+x = "100"
+y = int(x)
+
+print(y)
+```
+
+### Integer to string
+
+```python
+x = 100
+y = str(x)
+```
+
+### Integer to float
+
+```python
+x = 10
+y = float(x)
+```
+
+---
+
+# MODULE 3 — Input and Output
+
+## 8. Taking Input
+
+```python
+name = input("Enter your name: ")
+
+print("Hello", name)
+```
+
+Important:
+
+`input()` normally returns a **string**.
+
+For an integer:
+
+```python
+age = int(input("Enter age: "))
+```
+
+---
+
+# 9. f-Strings
+
+Modern Python commonly uses f-strings:
+
+```python
+name = "Darshit"
+age = 22
+
+print(f"My name is {name} and I am {age} years old.")
+```
+
+---
+
+# MODULE 4 — Operators
+
+## 10. Arithmetic Operators
+
+```python
+a = 10
+b = 3
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a // b)
+print(a % b)
+print(a ** b)
+```
+
+Operators:
+
+| Operator | Meaning |
+|---|---|
+| `+` | Addition |
+| `-` | Subtraction |
+| `*` | Multiplication |
+| `/` | Division |
+| `//` | Floor division |
+| `%` | Modulus |
+| `**` | Power |
+
+---
+
+# 11. Comparison Operators
+
+```python
+a = 10
+b = 20
+
+print(a == b)
+print(a != b)
+print(a > b)
+print(a < b)
+print(a >= b)
+print(a <= b)
+```
+
+---
+
+# 12. Logical Operators
+
+```python
+and
+or
+not
+```
+
+Example:
+
+```python
+age = 22
+
+if age >= 18 and age <= 60:
+    print("Eligible")
+```
+
+---
+
+# 13. Assignment Operators
+
+```python
+x = 10
+
+x += 5
+x -= 2
+x *= 3
+x /= 2
+```
+
+---
+
+# 14. Membership Operators
+
+```python
+name = "Darshit"
+
+print("D" in name)
+print("z" not in name)
+```
+
+---
+
+# 15. Identity Operators
+
+```python
+is
+is not
+```
+
+Example:
+
+```python
+a = None
+
+print(a is None)
+```
+
+`is` checks object identity, whereas `==` checks value equality.
+
+---
+
+# MODULE 5 — Conditional Statements
+
+## 16. if Statement
+
+```python
+age = 20
+
+if age >= 18:
+    print("Adult")
+```
+
+---
+
+# 17. if-else
+
+```python
+age = 16
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+```
+
+---
+
+# 18. if-elif-else
+
+```python
+marks = 75
+
+if marks >= 90:
+    print("A")
+elif marks >= 75:
+    print("B")
+elif marks >= 50:
+    print("C")
+else:
+    print("Fail")
+```
+
+---
+
+# 19. Nested if
+
+```python
+age = 22
+citizen = True
+
+if age >= 18:
+    if citizen:
+        print("Eligible")
+```
+
+---
+
+# MODULE 6 — Loops
+
+## 20. for Loop
+
+```python
+for i in range(5):
+    print(i)
+```
+
+Output:
+
+```text
+0
+1
+2
+3
+4
+```
+
+---
+
+# 21. while Loop
+
+```python
+i = 1
+
+while i <= 5:
+    print(i)
+    i += 1
+```
+
+---
+
+# 22. break
+
+Stops the loop.
+
+```python
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+```
+
+---
+
+# 23. continue
+
+Skips the current iteration.
+
+```python
+for i in range(5):
+    if i == 2:
+        continue
+
+    print(i)
+```
+
+---
+
+# 24. pass
+
+Does nothing.
+
+```python
+for i in range(5):
+    pass
+```
+
+---
+
+# MODULE 7 — Strings
+
+## 25. Creating Strings
+
+```python
+name = "Python"
+```
+
+You can use:
+
+```python
+'Python'
+"Python"
+"""Python"""
+```
+
+---
+
+# 26. String Indexing
+
+```python
+text = "Python"
+
+print(text[0])
+print(text[1])
+print(text[-1])
+```
+
+Output:
+
+```text
+P
+y
+n
+```
+
+---
+
+# 27. String Slicing
+
+```python
+text = "Python"
+
+print(text[0:3])
+```
+
+Output:
+
+```text
+Pyt
+```
+
+Other examples:
+
+```python
+text[:3]
+text[2:]
+text[::-1]
+```
+
+---
+
+# 28. Important String Methods
+
+```python
+text = "python programming"
+
+print(text.upper())
+print(text.lower())
+print(text.title())
+print(text.capitalize())
+print(text.replace("python", "Java"))
+print(text.find("programming"))
+```
+
+---
+
+# 29. split()
+
+```python
+text = "Python Java C++"
+
+languages = text.split()
+
+print(languages)
+```
+
+Output:
+
+```text
+['Python', 'Java', 'C++']
+```
+
+---
+
+# 30. join()
+
+```python
+words = ["Python", "is", "easy"]
+
+sentence = " ".join(words)
+
+print(sentence)
+```
+
+---
+
+# MODULE 8 — Lists
+
+## 31. What is a List?
+
+A list is an **ordered, mutable collection**.
+
+```python
+numbers = [10, 20, 30, 40]
+```
+
+---
+
+# 32. Accessing List Elements
+
+```python
+numbers = [10, 20, 30]
+
+print(numbers[0])
+print(numbers[-1])
+```
+
+---
+
+# 33. Modifying Lists
+
+```python
+numbers[0] = 100
+```
+
+---
+
+# 34. List Methods
+
+```python
+numbers.append(50)
+numbers.insert(1, 15)
+numbers.remove(20)
+numbers.pop()
+numbers.sort()
+numbers.reverse()
+```
+
+---
+
+# 35. List Slicing
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+print(numbers[1:4])
+```
+
+---
+
+# MODULE 9 — Tuples
+
+## 36. What is a Tuple?
+
+A tuple is an **ordered and immutable collection**.
+
+```python
+data = (10, 20, 30)
+```
+
+Unlike lists, tuple elements cannot normally be changed.
+
+```python
+data[0] = 100
+```
+
+This raises an error.
+
+---
+
+# 37. Tuple Unpacking
+
+```python
+person = ("Darshit", 22)
+
+name, age = person
+
+print(name)
+print(age)
+```
+
+---
+
+# MODULE 10 — Sets
+
+## 38. What is a Set?
+
+A set is an unordered collection of unique elements.
+
+```python
+numbers = {1, 2, 3, 3}
+
+print(numbers)
+```
+
+Duplicate values are removed.
+
+---
+
+# 39. Set Operations
+
+```python
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+print(a | b)   # union
+print(a & b)   # intersection
+print(a - b)   # difference
+```
+
+---
+
+# MODULE 11 — Dictionaries
+
+## 40. What is a Dictionary?
+
+A dictionary stores data as **key-value pairs**.
+
+```python
+student = {
+    "name": "Darshit",
+    "age": 22,
+    "course": "BCA"
+}
+```
+
+---
+
+# 41. Access Dictionary Values
+
+```python
+print(student["name"])
+```
+
+Safer approach:
+
+```python
+print(student.get("name"))
+```
+
+---
+
+# 42. Add and Update Values
+
+```python
+student["age"] = 23
+student["city"] = "Ahmedabad"
+```
+
+---
+
+# 43. Dictionary Methods
+
+```python
+student.keys()
+student.values()
+student.items()
+student.get("name")
+student.pop("age")
+```
+
+---
+
+# MODULE 12 — Functions
+
+## 44. What is a Function?
+
+A function is a reusable block of code designed to perform a specific task.
+
+```python
+def greet():
+    print("Hello")
+
+greet()
+```
+
+---
+
+# 45. Function Parameters
+
+```python
+def greet(name):
+    print("Hello", name)
+
+greet("Darshit")
+```
+
+---
+
+# 46. Return Statement
+
+```python
+def add(a, b):
+    return a + b
+
+result = add(10, 20)
+
+print(result)
+```
+
+---
+
+# 47. Default Arguments
+
+```python
+def greet(name="User"):
+    print("Hello", name)
+
+greet()
+greet("Darshit")
+```
+
+---
+
+# 48. *args
+
+Used to accept multiple positional arguments.
+
+```python
+def total(*numbers):
+    return sum(numbers)
+
+print(total(10, 20, 30))
+```
+
+---
+
+# 49. **kwargs
+
+Used to accept multiple keyword arguments.
+
+```python
+def student(**data):
+    print(data)
+
+student(name="Darshit", age=22)
+```
+
+---
+
+# MODULE 13 — Lambda Functions
+
+## 50. What is Lambda?
+
+A lambda is a small anonymous function.
+
+```python
+square = lambda x: x * x
+
+print(square(5))
+```
+
+Output:
+
+```text
+25
+```
+
+---
+
+# MODULE 14 — List Comprehension
+
+## 51. What is List Comprehension?
+
+List comprehension provides a concise way to create lists.
+
+Normal:
+
+```python
+numbers = []
+
+for i in range(5):
+    numbers.append(i * 2)
+```
+
+Comprehension:
+
+```python
+numbers = [i * 2 for i in range(5)]
+```
+
+With condition:
+
+```python
+even = [i for i in range(10) if i % 2 == 0]
+```
+
+---
+
+# MODULE 15 — Exception Handling
+
+## 52. What is Exception Handling?
+
+Exception handling allows a program to handle runtime errors without abruptly terminating.
+
+```python
+try:
+    a = 10 / 0
+
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+```
+
+---
+
+# 53. try-except-else-finally
+
+```python
+try:
+    x = int(input("Enter number: "))
+
+except ValueError:
+    print("Invalid input")
+
+else:
+    print("Valid input")
+
+finally:
+    print("Program finished")
+```
+
+---
+
+# 54. raise
+
+You can manually raise an exception.
+
+```python
+age = -5
+
+if age < 0:
+    raise ValueError("Age cannot be negative")
+```
+
+---
+
+# MODULE 16 — File Handling
+
+## 55. Opening a File
+
+```python
+file = open("data.txt", "r")
+
+content = file.read()
+
+print(content)
+
+file.close()
+```
+
+---
+
+# 56. Recommended `with` Syntax
+
+```python
+with open("data.txt", "r") as file:
+    content = file.read()
+
+print(content)
+```
+
+The file is automatically closed.
+
+---
+
+# 57. File Modes
+
+| Mode | Meaning |
+|---|---|
+| `r` | Read |
+| `w` | Write |
+| `a` | Append |
+| `x` | Create |
+| `rb` | Read binary |
+| `wb` | Write binary |
+
+---
+
+# MODULE 17 — Modules and Packages
+
+## 58. What is a Module?
+
+A module is a Python file containing code such as functions, classes, and variables.
+
+Example:
+
+```python
+import math
+
+print(math.sqrt(25))
+```
+
+---
+
+# 59. Import Specific Function
+
+```python
+from math import sqrt
+
+print(sqrt(25))
+```
+
+---
+
+# 60. Creating Your Own Module
+
+`calculator.py`
+
+```python
+def add(a, b):
+    return a + b
+```
+
+Another file:
+
+```python
+import calculator
+
+print(calculator.add(10, 20))
+```
+
+---
+
+# MODULE 18 — Object-Oriented Programming
+
+## 61. What is OOP?
+
+Object-Oriented Programming is a programming paradigm based on **objects and classes**.
+
+Important concepts:
+
+1. Class
+2. Object
+3. Encapsulation
+4. Inheritance
+5. Polymorphism
+6. Abstraction
+
+---
+
+# 62. Class and Object
+
+```python
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+    def display(self):
+        print(self.name)
+
+
+s1 = Student("Darshit")
+
+s1.display()
+```
+
+---
+
+# 63. `self`
+
+`self` refers to the current object instance.
+
+```python
+class Student:
+    def __init__(self, name):
+        self.name = name
+```
+
+---
+
+# 64. Constructor
+
+`__init__()` is commonly used to initialize an object's attributes when an object is created.
+
+```python
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+```
+
+---
+
+# 65. Inheritance
+
+Inheritance allows one class to reuse and extend another class.
+
+```python
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
+
+
+d = Dog()
+
+d.speak()
+d.bark()
+```
+
+---
+
+# 66. Polymorphism
+
+Polymorphism means the same interface can work with different object types.
+
+```python
+class Dog:
+    def sound(self):
+        print("Bark")
+
+
+class Cat:
+    def sound(self):
+        print("Meow")
+
+
+for animal in [Dog(), Cat()]:
+    animal.sound()
+```
+
+---
+
+# 67. Encapsulation
+
+Encapsulation means bundling data and behavior together while controlling how internal data is accessed.
+
+Python commonly uses naming conventions such as:
+
+```python
+class Account:
+    def __init__(self):
+        self._balance = 1000
+```
+
+Double underscore triggers name mangling:
+
+```python
+class Account:
+    def __init__(self):
+        self.__balance = 1000
+```
+
+---
+
+# 68. Abstraction
+
+Abstraction focuses on exposing essential behavior while hiding implementation details.
+
+Python supports abstraction using the `abc` module.
+
+```python
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+
+    @abstractmethod
+    def sound(self):
+        pass
+```
+
+---
+
+# MODULE 19 — Iterators and Generators
+
+## 69. Iterator
+
+An iterator is an object that produces values one at a time using the iterator protocol.
+
+```python
+numbers = iter([1, 2, 3])
+
+print(next(numbers))
+print(next(numbers))
+```
+
+---
+
+# 70. Generator
+
+A generator produces values lazily using `yield`.
+
+```python
+def numbers():
+    for i in range(5):
+        yield i
+
+for n in numbers():
+    print(n)
+```
+
+Generators can be memory-efficient for large sequences.
+
+---
+
+# MODULE 20 — Decorators
+
+## 71. What is a Decorator?
+
+A decorator is a callable that modifies or extends the behavior of another function or class.
+
+```python
+def decorator(func):
+
+    def wrapper():
+        print("Before function")
+        func()
+        print("After function")
+
+    return wrapper
+
+
+@decorator
+def hello():
+    print("Hello")
+
+
+hello()
+```
+
+---
+
+# MODULE 21 — `map`, `filter`, `reduce`
+
+## 72. map()
+
+```python
+numbers = [1, 2, 3, 4]
+
+result = list(map(lambda x: x * 2, numbers))
+
+print(result)
+```
+
+---
+
+# 73. filter()
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+result = list(filter(lambda x: x % 2 == 0, numbers))
+
+print(result)
+```
+
+---
+
+# 74. reduce()
+
+```python
+from functools import reduce
+
+numbers = [1, 2, 3, 4]
+
+result = reduce(lambda a, b: a + b, numbers)
+
+print(result)
+```
+
+---
+
+# MODULE 22 — Advanced Python
+
+## 75. Mutable vs Immutable
+
+### Mutable
+
+Can be modified:
+
+```text
+list
+dict
+set
+```
+
+### Immutable
+
+Cannot be modified in place:
+
+```text
+int
+float
+str
+tuple
+bool
+```
+
+---
+
+# 76. Shallow Copy vs Deep Copy
+
+```python
+import copy
+
+a = [[1, 2], [3, 4]]
+
+b = copy.copy(a)
+c = copy.deepcopy(a)
+```
+
+**Shallow copy** copies the outer object but may share nested objects.
+
+**Deep copy** recursively copies nested objects.
+
+---
+
+# 77. `==` vs `is`
+
+`==` checks whether values are equal.
+
+`is` checks whether two references point to the same object.
+
+```python
+a = [1, 2]
+b = [1, 2]
+
+print(a == b)   # True
+print(a is b)   # False
+```
+
+---
+
+# 78. Scope
+
+Python has different variable scopes.
+
+A useful model is:
+
+**LEGB**
+
+- Local
+- Enclosing
+- Global
+- Built-in
+
+---
+
+# 79. `global`
+
+```python
+x = 10
+
+def change():
+    global x
+    x = 20
+
+change()
+
+print(x)
+```
+
+---
+
+# 80. `nonlocal`
+
+Used to modify a variable in an enclosing function scope.
+
+```python
+def outer():
+    x = 10
+
+    def inner():
+        nonlocal x
+        x = 20
+
+    inner()
+    print(x)
+
+outer()
+```
+
+---
+
+# MODULE 23 — Python Data Structures
+
+Learn these deeply for interviews and DSA:
+
+- List
+- Tuple
+- Set
+- Dictionary
+- Stack
+- Queue
+- Deque
+- Heap
+- Hash table
+- Linked list
+- Tree
+- Graph
+
+Python provides useful built-in/standard-library structures such as:
+
+```python
+list
+dict
+set
+collections.deque
+heapq
+```
+
+---
+
+# MODULE 24 — Python for DSA
+
+## 81. Stack
+
+```python
+stack = []
+
+stack.append(10)
+stack.append(20)
+stack.append(30)
+
+print(stack.pop())
+```
+
+---
+
+## 82. Queue
+
+```python
+from collections import deque
+
+queue = deque()
+
+queue.append(10)
+queue.append(20)
+
+print(queue.popleft())
+```
+
+---
+
+## 83. Binary Search
+
+```python
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+
+        if arr[mid] == target:
+            return mid
+
+        elif arr[mid] < target:
+            low = mid + 1
+
+        else:
+            high = mid - 1
+
+    return -1
+
+
+arr = [1, 3, 5, 7, 9]
+
+print(binary_search(arr, 7))
+```
+
+---
+
+# MODULE 25 — Sorting
+
+## 84. Bubble Sort
+
+```python
+def bubble_sort(arr):
+
+    n = len(arr)
+
+    for i in range(n):
+
+        for j in range(0, n - i - 1):
+
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+    return arr
+
+
+numbers = [5, 2, 8, 1, 3]
+
+print(bubble_sort(numbers))
+```
+
+Output:
+
+```text
+[1, 2, 3, 5, 8]
+```
+
+Average/worst-case time complexity:
+
+**O(n²)**
+
+---
+
+# MODULE 26 — Regular Expressions
+
+## 85. What is Regex?
+
+Regular expressions are patterns used to search, match, and manipulate text.
+
+```python
+import re
+
+text = "My phone number is 12345"
+
+result = re.search(r"\d+", text)
+
+print(result.group())
+```
+
+---
+
+# MODULE 27 — JSON
+
+## 86. Working with JSON
+
+```python
+import json
+
+data = {
+    "name": "Darshit",
+    "age": 22
+}
+
+json_data = json.dumps(data)
+
+print(json_data)
+```
+
+JSON → Python:
+
+```python
+data = json.loads(json_data)
+```
+
+---
+
+# MODULE 28 — APIs
+
+## 87. What is an API?
+
+API stands for **Application Programming Interface**.
+
+It allows different software systems to communicate.
+
+A common Python HTTP library is `requests`.
+
+Conceptually:
+
+```python
+import requests
+
+response = requests.get("https://example.com")
+
+print(response.status_code)
+```
+
+---
+
+# MODULE 29 — Database Programming
+
+Python can work with databases such as:
+
+- SQLite
+- PostgreSQL
+- MySQL
+- MongoDB
+
+Example SQLite:
+
+```python
+import sqlite3
+
+connection = sqlite3.connect("students.db")
+
+cursor = connection.cursor()
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS students (
+    id INTEGER,
+    name TEXT
+)
+""")
+
+connection.commit()
+connection.close()
+```
+
+---
+
+# MODULE 30 — NumPy
+
+For AI/ML, learn NumPy thoroughly.
+
+```python
+import numpy as np
+
+arr = np.array([1, 2, 3, 4])
+
+print(arr)
+print(arr.mean())
+print(arr.sum())
+```
+
+Important concepts:
+
+- Arrays
+- Dimensions
+- Shape
+- Indexing
+- Slicing
+- Broadcasting
+- Vectorization
+- Matrix operations
+
+---
+
+# MODULE 31 — Pandas
+
+Pandas is essential for data analysis.
+
+```python
+import pandas as pd
+
+data = {
+    "Name": ["A", "B", "C"],
+    "Marks": [80, 90, 75]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+```
+
+Learn:
+
+- Series
+- DataFrame
+- `read_csv()`
+- `head()`
+- `tail()`
+- `info()`
+- `describe()`
+- Filtering
+- Sorting
+- GroupBy
+- Merge
+- Join
+- Missing values
+
+---
+
+# MODULE 32 — Data Visualization
+
+### Matplotlib
+
+```python
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 15, 25]
+
+plt.plot(x, y)
+
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.title("Example Graph")
+
+plt.show()
+```
+
+Learn:
+
+- Line plots
+- Bar charts
+- Histograms
+- Scatter plots
+- Box plots
+
+---
+
+# MODULE 33 — Machine Learning with Python
+
+The main library to learn is **Scikit-learn**.
+
+Typical workflow:
+
+```text
+Collect Data
+     ↓
+Clean Data
+     ↓
+EDA
+     ↓
+Preprocessing
+     ↓
+Feature Engineering
+     ↓
+Train/Test Split
+     ↓
+Model Training
+     ↓
+Prediction
+     ↓
+Evaluation
+     ↓
+Deployment
+```
+
+---
+
+# MODULE 34 — Simple ML Example
+
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+
+X = [[1], [2], [3], [4], [5]]
+y = [2, 4, 6, 8, 10]
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
+model = LinearRegression()
+
+model.fit(X_train, y_train)
+
+prediction = model.predict([[6]])
+
+print(prediction)
+```
+
+---
+
+# MODULE 35 — Deep Learning
+
+After Python + NumPy + Pandas + ML, move to:
+
+### Neural Networks
+
+Learn:
+
+- Neurons
+- Weights
+- Bias
+- Activation functions
+- Forward propagation
+- Backpropagation
+- Loss functions
+- Optimizers
+- Epochs
+- Batch size
+- Learning rate
+
+Then learn a framework such as:
+
+**PyTorch**
+
+or
+
+**TensorFlow/Keras**
+
+---
+
+# MODULE 36 — Python for AI
+
+Your final Python + AI stack should look approximately like:
+
+```text
+Python
+│
+├── NumPy
+├── Pandas
+├── Matplotlib
+├── Scikit-learn
+│
+├── PyTorch
+│
+├── OpenCV
+│
+├── NLP
+│   ├── NLTK
+│   ├── spaCy
+│   └── Transformers
+│
+└── Generative AI
+    ├── LLM APIs
+    ├── Embeddings
+    ├── Vector Databases
+    ├── RAG
+    ├── Agents
+    └── Deployment
+```
+
+---
+
+# MODULE 37 — Python Interview Questions
+
+### Q1. Is Python compiled or interpreted?
+
+Python is generally described as an interpreted language, although implementations such as CPython first compile source code to bytecode before execution by the Python virtual machine.
+
+---
+
+### Q2. What is dynamic typing?
+
+In Python, variables do not require an explicit type declaration.
+
+```python
+x = 10
+x = "Hello"
+```
+
+The object referenced by `x` determines the type at runtime.
+
+---
+
+### Q3. List vs Tuple?
+
+**List:**
+
+- Mutable
+- Uses `[]`
+
+**Tuple:**
+
+- Immutable
+- Uses `()`
+
+---
+
+### Q4. List vs Set?
+
+**List:**
+
+- Ordered
+- Allows duplicates
+- Indexable
+
+**Set:**
+
+- Unique elements
+- Not used for positional indexing
+- Efficient membership testing
+
+---
+
+### Q5. What is a dictionary?
+
+A dictionary stores mappings between keys and values.
+
+```python
+student = {
+    "name": "Darshit",
+    "age": 22
+}
+```
+
+---
+
+### Q6. What is PEP 8?
+
+PEP 8 is the main Python style guide describing conventions for writing readable Python code.
+
+---
+
+### Q7. What is garbage collection?
+
+Python manages memory automatically. CPython primarily uses reference counting along with a cyclic garbage collector to detect reference cycles.
+
+---
+
+### Q8. What is a virtual environment?
+
+A virtual environment creates an isolated Python environment for a project and its dependencies.
+
+Example:
+
+```bash
+python -m venv venv
+```
+
+Activate on Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+---
+
+### Q9. What is pip?
+
+`pip` is the standard package-management tool commonly used to install Python packages.
+
+```bash
+pip install numpy
+```
+
+---
+
+### Q10. What is `__name__ == "__main__"`?
+
+It allows code to run only when the file is executed directly rather than imported as a module.
+
+```python
+if __name__ == "__main__":
+    print("Program started")
+```
+
+---
+
+# MODULE 38 — Python Projects
+
+After learning the fundamentals, build projects.
+
+### Beginner
+
+1. Calculator
+2. Number guessing game
+3. Simple quiz
+4. To-do list
+5. Password generator
+6. Contact book
+7. Student management system
+
+### Intermediate
+
+8. Expense tracker
+9. Weather application
+10. File organizer
+11. Web scraper
+12. REST API
+13. Blog backend
+14. Chat application
+15. SQLite database application
+
+### Advanced
+
+16. Machine-learning prediction system
+17. Recommendation system
+18. Image classification
+19. Face-recognition application
+20. NLP sentiment analyzer
+21. RAG document chatbot
+22. AI assistant
+23. LLM-powered application
+24. AI agent
+25. End-to-end ML deployment
+
+---
+
+# Python → AI Career Roadmap
+
+If your ultimate goal is **AI/ML**, don't stop after basic Python.
+
+Follow:
+
+```text
+Python Fundamentals
+        ↓
+Advanced Python
+        ↓
+DSA with Python
+        ↓
+NumPy
+        ↓
+Pandas
+        ↓
+Matplotlib
+        ↓
+Statistics
+        ↓
+Probability
+        ↓
+Machine Learning
+        ↓
+Scikit-learn
+        ↓
+Deep Learning
+        ↓
+PyTorch
+        ↓
+Computer Vision
+        ↓
+NLP
+        ↓
+Transformers
+        ↓
+LLMs
+        ↓
+Generative AI
+        ↓
+Embeddings
+        ↓
+Vector Databases
+        ↓
+RAG
+        ↓
+AI Agents
+        ↓
+MLOps
+        ↓
+Deployment
+        ↓
+AI Projects
+        ↓
+Interview Preparation
+```
+
+## ⭐ Most Important Python Topics for AI Interviews
+
+Focus especially on:
+
+**Python basics → Functions → OOP → Exception Handling → File Handling → Modules → Iterators/Generators → Decorators → Data Structures → Algorithms → NumPy → Pandas → Statistics → Scikit-learn → ML → Deep Learning → PyTorch.**
+
+If you master these in this order, Python becomes a **foundation for your AI/ML development rather than just a programming language**.

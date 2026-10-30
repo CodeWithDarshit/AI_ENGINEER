@@ -1,0 +1,1996 @@
+# AI Full Course — Basic to Advanced Interview Questions & Answers
+
+Below is a **complete AI theory + interview preparation course**, arranged from **beginner → intermediate → advanced**. The answers are written in **simple English**, suitable for **college exams, viva, interviews, and placement preparation**.
+
+---
+
+# 1. Artificial Intelligence — Basics
+
+### 1. What is Artificial Intelligence?
+
+**Answer:**  
+Artificial Intelligence (AI) is a branch of computer science that develops systems capable of performing tasks that normally require human intelligence.
+
+These tasks include:
+
+- Learning
+- Reasoning
+- Problem-solving
+- Decision-making
+- Understanding language
+- Recognizing images
+- Speech recognition
+
+**Example:** Chatbots, self-driving cars, recommendation systems, and voice assistants.
+
+---
+
+### 2. What are the main goals of AI?
+
+The main goals of AI are:
+
+1. To create intelligent machines.
+2. To make machines learn from experience.
+3. To solve complex problems.
+4. To automate human tasks.
+5. To make intelligent decisions.
+6. To understand human language and behavior.
+
+---
+
+### 3. What are the characteristics of AI?
+
+Important characteristics include:
+
+- Learning
+- Reasoning
+- Problem-solving
+- Knowledge representation
+- Perception
+- Natural Language Processing
+- Decision-making
+- Planning
+
+---
+
+### 4. What is the difference between AI and traditional programming?
+
+| AI | Traditional Programming |
+|---|---|
+| Can learn from data | Usually follows predefined rules |
+| Can make predictions | Produces output according to programmed logic |
+| Handles complex patterns | Best for clearly defined problems |
+| Uses models | Uses explicit instructions |
+
+---
+
+### 5. What are the types of AI?
+
+AI is commonly classified into:
+
+### Based on capability
+
+1. **ANI — Artificial Narrow Intelligence**
+2. **AGI — Artificial General Intelligence**
+3. **ASI — Artificial Super Intelligence**
+
+### Based on functionality
+
+1. Reactive Machines
+2. Limited Memory
+3. Theory of Mind
+4. Self-Aware AI
+
+---
+
+### 6. What is Narrow AI?
+
+Narrow AI is an AI system designed to perform a specific task or a limited group of tasks.
+
+**Examples:**
+
+- Face recognition
+- Spam detection
+- Recommendation systems
+- Voice assistants
+
+Most AI systems available today are Narrow AI.
+
+---
+
+### 7. What is AGI?
+
+AGI stands for **Artificial General Intelligence**.
+
+It refers to a hypothetical AI system capable of understanding, learning, and performing a wide range of intellectual tasks at a human-like level.
+
+AGI has not been reliably achieved.
+
+---
+
+### 8. What is ASI?
+
+ASI stands for **Artificial Super Intelligence**.
+
+It refers to a hypothetical intelligence that would exceed human intelligence across essentially all intellectual domains.
+
+---
+
+# 2. AI, ML, DL and Generative AI
+
+### 9. What is Machine Learning?
+
+Machine Learning (ML) is a subset of AI that enables computers to learn patterns from data and make predictions or decisions without being explicitly programmed for every situation.
+
+---
+
+### 10. What is Deep Learning?
+
+Deep Learning is a subset of Machine Learning that uses **artificial neural networks with multiple layers** to learn complex patterns from large amounts of data.
+
+**Applications:**
+
+- Image recognition
+- Speech recognition
+- Natural language processing
+- Autonomous driving
+- Generative AI
+
+---
+
+### 11. What is the relationship between AI, ML and DL?
+
+The relationship is:
+
+**AI → Machine Learning → Deep Learning**
+
+AI is the broad field.
+
+ML is a subset of AI.
+
+DL is a subset of ML.
+
+---
+
+### 12. What is Generative AI?
+
+Generative AI is a type of AI that can create new content based on patterns learned from training data.
+
+It can generate:
+
+- Text
+- Images
+- Audio
+- Video
+- Code
+
+**Examples:** Large Language Models and image-generation models.
+
+---
+
+# 3. Intelligent Agents
+
+### 13. What is an AI agent?
+
+An AI agent is a system that **perceives its environment, processes information, and takes actions to achieve a goal**.
+
+Basic process:
+
+**Environment → Perception → Decision → Action**
+
+---
+
+### 14. What is a rational agent?
+
+A rational agent selects the action that is expected to produce the best result according to its goals and available information.
+
+---
+
+### 15. What is PEAS?
+
+PEAS stands for:
+
+- **P — Performance Measure**
+- **E — Environment**
+- **A — Actuators**
+- **S — Sensors**
+
+It is used to describe an intelligent agent's task environment.
+
+---
+
+### 16. What is an environment in AI?
+
+The environment is everything external to an agent that the agent interacts with.
+
+For example, for a self-driving car:
+
+- Roads
+- Traffic
+- Pedestrians
+- Other vehicles
+- Traffic signals
+
+are part of its environment.
+
+---
+
+# 4. Problem Solving and Search
+
+### 17. What is search in AI?
+
+Search is the process of exploring possible states or solutions to find a path from an initial state to a goal state.
+
+---
+
+### 18. What is a state space?
+
+A state space is the collection of all possible states that can occur while solving a problem.
+
+---
+
+### 19. What is BFS?
+
+BFS stands for **Breadth-First Search**.
+
+It explores nodes level by level.
+
+It uses a **queue**.
+
+For an unweighted graph, BFS can find the shortest path in terms of number of edges.
+
+---
+
+### 20. What is DFS?
+
+DFS stands for **Depth-First Search**.
+
+It explores one path as deeply as possible before backtracking.
+
+It can be implemented using:
+
+- Stack
+- Recursion
+
+---
+
+### 21. BFS vs DFS
+
+| BFS | DFS |
+|---|---|
+| Level-by-level | Depth-first |
+| Uses queue | Uses stack/recursion |
+| Can find shortest path in unweighted graph | Does not generally guarantee shortest path |
+| Can require more memory | Often requires less memory |
+
+---
+
+### 22. What is heuristic search?
+
+Heuristic search uses additional knowledge about the problem to guide the search toward a promising solution.
+
+---
+
+### 23. What is a heuristic function?
+
+A heuristic function estimates the cost or distance from the current state to the goal.
+
+It is usually represented as:
+
+**h(n)**
+
+---
+
+### 24. What is A* algorithm?
+
+A* is an informed search algorithm that uses:
+
+**f(n) = g(n) + h(n)**
+
+where:
+
+- **g(n)** = cost from the start node to the current node
+- **h(n)** = estimated cost from current node to goal
+- **f(n)** = estimated total cost
+
+---
+
+# 5. Knowledge Representation
+
+### 25. What is Knowledge Representation?
+
+Knowledge Representation is the process of representing facts, relationships, rules, and concepts in a form that an AI system can use for reasoning.
+
+---
+
+### 26. What are common knowledge representation techniques?
+
+Examples include:
+
+- Logic
+- Semantic networks
+- Frames
+- Rules
+- Ontologies
+- Knowledge graphs
+
+---
+
+### 27. What is an expert system?
+
+An expert system is an AI system designed to solve problems in a specific domain using expert knowledge.
+
+It generally contains:
+
+1. Knowledge Base
+2. Inference Engine
+3. User Interface
+
+---
+
+### 28. What is an inference engine?
+
+An inference engine applies rules and logical reasoning to the knowledge stored in the knowledge base to derive conclusions.
+
+---
+
+# 6. Machine Learning
+
+### 29. What are the types of Machine Learning?
+
+The major types are:
+
+1. **Supervised Learning**
+2. **Unsupervised Learning**
+3. **Semi-Supervised Learning**
+4. **Reinforcement Learning**
+
+---
+
+### 30. What is supervised learning?
+
+In supervised learning, the model learns from **labeled data**.
+
+Example:
+
+Input:
+
+`House size, location, rooms`
+
+Output:
+
+`House price`
+
+---
+
+### 31. What is unsupervised learning?
+
+In unsupervised learning, the model receives data without target labels and tries to discover hidden patterns.
+
+Examples:
+
+- Clustering
+- Dimensionality reduction
+- Association rule mining
+
+---
+
+### 32. What is reinforcement learning?
+
+Reinforcement Learning (RL) is a learning method in which an agent learns by interacting with an environment and receiving **rewards or penalties**.
+
+Main components:
+
+- Agent
+- Environment
+- State
+- Action
+- Reward
+- Policy
+
+---
+
+# 7. Dataset Concepts
+
+### 33. What is a dataset?
+
+A dataset is a collection of data used for analysis, training, testing, or evaluation.
+
+---
+
+### 34. What are features?
+
+Features are input variables used by a machine-learning model.
+
+Example:
+
+For predicting house prices:
+
+- Area
+- Number of rooms
+- Location
+- Age
+
+are features.
+
+---
+
+### 35. What is a target variable?
+
+The target variable is the output that the model tries to predict.
+
+Example:
+
+**Features → House information**
+
+**Target → House price**
+
+---
+
+### 36. What is training data?
+
+Training data is the portion of data used to train the machine-learning model.
+
+---
+
+### 37. What is testing data?
+
+Testing data is used to evaluate how well the trained model performs on previously unseen data.
+
+---
+
+### 38. What is validation data?
+
+Validation data is used during model development to tune hyperparameters and compare model configurations.
+
+---
+
+# 8. Data Preprocessing
+
+### 39. What is data preprocessing?
+
+Data preprocessing is the process of preparing raw data for machine-learning algorithms.
+
+It may include:
+
+- Handling missing values
+- Removing duplicates
+- Encoding categorical data
+- Scaling numerical features
+- Handling outliers
+- Feature selection
+
+---
+
+### 40. What is normalization?
+
+Normalization transforms values into a specific range, commonly:
+
+**0 to 1**
+
+A common formula is:
+
+**x' = (x - min)/(max - min)**
+
+---
+
+### 41. What is standardization?
+
+Standardization transforms data so that it generally has:
+
+- Mean = 0
+- Standard deviation = 1
+
+Formula:
+
+**z = (x - μ) / σ**
+
+---
+
+### 42. Normalization vs Standardization
+
+| Normalization | Standardization |
+|---|---|
+| Usually scales to a fixed range | Centers around mean |
+| Common range is 0–1 | Mean generally becomes 0 |
+| Min-max scaling | Z-score scaling |
+
+---
+
+### 43. What is missing data?
+
+Missing data occurs when some values are unavailable in a dataset.
+
+Common solutions:
+
+- Delete rows/columns
+- Mean imputation
+- Median imputation
+- Mode imputation
+- Model-based imputation
+
+---
+
+# 9. Regression
+
+### 44. What is regression?
+
+Regression is a supervised learning technique used to predict a **continuous numerical value**.
+
+Examples:
+
+- House price prediction
+- Temperature prediction
+- Salary prediction
+
+---
+
+### 45. What is Linear Regression?
+
+Linear Regression models the relationship between input variables and a continuous output using a linear equation.
+
+Simple linear regression:
+
+**y = mx + c**
+
+---
+
+### 46. What is multiple linear regression?
+
+Multiple Linear Regression uses multiple independent variables to predict a dependent variable.
+
+Example:
+
+**Price = b₀ + b₁(area) + b₂(rooms) + b₃(age)**
+
+---
+
+### 47. What is logistic regression?
+
+Despite its name, Logistic Regression is mainly used for **classification**.
+
+It estimates the probability of a class.
+
+For binary classification, output is commonly between:
+
+**0 and 1**
+
+---
+
+# 10. Classification
+
+### 48. What is classification?
+
+Classification is a supervised learning problem where the output belongs to one or more predefined classes.
+
+Examples:
+
+- Spam / Not Spam
+- Disease / No Disease
+- Cat / Dog
+
+---
+
+### 49. What is binary classification?
+
+Binary classification has two possible classes.
+
+Example:
+
+**Spam / Not Spam**
+
+---
+
+### 50. What is multiclass classification?
+
+Multiclass classification has more than two possible classes.
+
+Example:
+
+Classifying an image as:
+
+- Cat
+- Dog
+- Horse
+- Bird
+
+---
+
+# 11. Important ML Algorithms
+
+### 51. What is a Decision Tree?
+
+A Decision Tree is a tree-based algorithm that makes decisions using a sequence of conditions.
+
+It contains:
+
+- Root node
+- Decision nodes
+- Branches
+- Leaf nodes
+
+---
+
+### 52. What is Random Forest?
+
+Random Forest is an ensemble learning algorithm that combines predictions from multiple decision trees.
+
+It can be used for:
+
+- Classification
+- Regression
+
+---
+
+### 53. What is KNN?
+
+KNN stands for **K-Nearest Neighbors**.
+
+It predicts the class of a data point based on the classes of its nearest neighboring points.
+
+---
+
+### 54. What is SVM?
+
+SVM stands for **Support Vector Machine**.
+
+It attempts to find a decision boundary that separates classes with a large margin.
+
+---
+
+### 55. What is Naive Bayes?
+
+Naive Bayes is a probabilistic classification algorithm based on **Bayes' theorem** and a simplifying assumption of conditional independence between features.
+
+---
+
+# 12. Clustering
+
+### 56. What is clustering?
+
+Clustering is an unsupervised learning technique that groups similar data points together.
+
+---
+
+### 57. What is K-Means?
+
+K-Means is a clustering algorithm that divides data into **K clusters**.
+
+Basic steps:
+
+1. Select K.
+2. Initialize centroids.
+3. Assign points to nearest centroid.
+4. Recalculate centroids.
+5. Repeat until convergence.
+
+---
+
+### 58. What is hierarchical clustering?
+
+Hierarchical clustering creates a hierarchy of clusters.
+
+It can be represented using a:
+
+**Dendrogram**
+
+---
+
+# 13. Model Evaluation
+
+### 59. What is accuracy?
+
+Accuracy is the proportion of correct predictions among all predictions.
+
+**Accuracy = Correct Predictions / Total Predictions**
+
+---
+
+### 60. What is precision?
+
+Precision measures how many predicted positive cases are actually positive.
+
+**Precision = TP / (TP + FP)**
+
+---
+
+### 61. What is recall?
+
+Recall measures how many actual positive cases were correctly identified.
+
+**Recall = TP / (TP + FN)**
+
+---
+
+### 62. What is F1-score?
+
+F1-score is the harmonic mean of precision and recall.
+
+**F1 = 2 × (Precision × Recall)/(Precision + Recall)**
+
+---
+
+### 63. What is a confusion matrix?
+
+A confusion matrix summarizes classification results using:
+
+- True Positive (TP)
+- True Negative (TN)
+- False Positive (FP)
+- False Negative (FN)
+
+---
+
+# 14. Overfitting and Underfitting
+
+### 64. What is overfitting?
+
+Overfitting occurs when a model learns the training data too closely, including noise, and performs poorly on unseen data.
+
+---
+
+### 65. What is underfitting?
+
+Underfitting occurs when a model is too simple to capture the important patterns in the data.
+
+---
+
+### 66. How can overfitting be reduced?
+
+Methods include:
+
+- More training data
+- Regularization
+- Cross-validation
+- Feature selection
+- Pruning
+- Dropout in neural networks
+- Early stopping
+
+---
+
+# 15. Bias and Variance
+
+### 67. What is bias?
+
+Bias is error caused by overly simplistic assumptions in a model.
+
+High bias can lead to underfitting.
+
+---
+
+### 68. What is variance?
+
+Variance represents how much a model's predictions change when trained on different datasets.
+
+High variance is commonly associated with overfitting.
+
+---
+
+### 69. What is the bias-variance tradeoff?
+
+The goal is to find a suitable balance between bias and variance so that the model generalizes well to unseen data.
+
+---
+
+# 16. Feature Engineering
+
+### 70. What is feature engineering?
+
+Feature engineering is the process of creating, transforming, or selecting useful features from raw data to improve model performance.
+
+---
+
+### 71. What is feature selection?
+
+Feature selection means selecting the most relevant features while removing irrelevant or redundant features.
+
+Benefits:
+
+- Less computation
+- Reduced noise
+- Better interpretability
+- Sometimes improved generalization
+
+---
+
+### 72. What is dimensionality reduction?
+
+Dimensionality reduction reduces the number of features while trying to preserve important information.
+
+A popular technique is:
+
+**PCA — Principal Component Analysis**
+
+---
+
+# 17. Neural Networks
+
+### 73. What is a neural network?
+
+A neural network is a computational model inspired by biological neural networks.
+
+It consists of interconnected nodes called neurons.
+
+Basic structure:
+
+**Input Layer → Hidden Layers → Output Layer**
+
+---
+
+### 74. What is an artificial neuron?
+
+An artificial neuron receives inputs, applies weights and a bias, and passes the result through an activation function.
+
+Conceptually:
+
+**Output = Activation(Σ wᵢxᵢ + b)**
+
+---
+
+### 75. What are weights?
+
+Weights determine how strongly individual inputs influence a neuron's output.
+
+---
+
+### 76. What is bias in a neural network?
+
+Bias is an additional learnable parameter that helps shift the activation function and improve the model's ability to fit data.
+
+---
+
+### 77. What is an activation function?
+
+An activation function determines the output of a neuron and introduces non-linearity into a neural network.
+
+Examples:
+
+- ReLU
+- Sigmoid
+- Tanh
+- Softmax
+
+---
+
+### 78. What is ReLU?
+
+ReLU stands for **Rectified Linear Unit**.
+
+**ReLU(x) = max(0, x)**
+
+It is widely used in hidden layers of neural networks.
+
+---
+
+### 79. What is Sigmoid?
+
+Sigmoid maps a value approximately into the range:
+
+**0 to 1**
+
+It is often useful when representing a probability for binary classification.
+
+---
+
+### 80. What is Softmax?
+
+Softmax converts a vector of scores into values that can be interpreted as a probability distribution over multiple classes.
+
+---
+
+# 18. Training Neural Networks
+
+### 81. What is forward propagation?
+
+Forward propagation is the process of passing input data through the neural network to generate an output.
+
+---
+
+### 82. What is backpropagation?
+
+Backpropagation calculates how the model's parameters contributed to the error and propagates gradients backward through the network so the parameters can be updated.
+
+---
+
+### 83. What is gradient descent?
+
+Gradient Descent is an optimization algorithm used to minimize a loss function by updating model parameters in the direction that reduces the loss.
+
+---
+
+### 84. What is a learning rate?
+
+The learning rate controls the size of parameter updates during optimization.
+
+A learning rate that is:
+
+- Too large → training may become unstable.
+- Too small → training may become very slow.
+
+---
+
+### 85. What is an epoch?
+
+An epoch represents one complete pass through the training dataset.
+
+---
+
+### 86. What is batch size?
+
+Batch size is the number of training samples processed before the model updates its parameters.
+
+---
+
+# 19. Loss Functions
+
+### 87. What is a loss function?
+
+A loss function measures how different the model's prediction is from the expected target.
+
+---
+
+### 88. What is Mean Squared Error?
+
+MSE is commonly used for regression.
+
+**MSE = (1/n) Σ(y - ŷ)²**
+
+---
+
+### 89. What is Cross-Entropy Loss?
+
+Cross-entropy measures the difference between predicted probability distributions and the actual class labels.
+
+It is widely used for classification.
+
+---
+
+# 20. CNN — Computer Vision
+
+### 90. What is Computer Vision?
+
+Computer Vision is a field of AI that enables computers to process and understand information from images and videos.
+
+Applications include:
+
+- Face recognition
+- Object detection
+- Medical imaging
+- Autonomous vehicles
+- OCR
+
+---
+
+### 91. What is CNN?
+
+CNN stands for **Convolutional Neural Network**.
+
+It is a neural network architecture especially effective for image and spatial data.
+
+---
+
+### 92. What is convolution?
+
+Convolution applies a learnable filter/kernel to input data to detect local patterns such as edges and textures.
+
+---
+
+### 93. What is pooling?
+
+Pooling reduces the spatial dimensions of feature maps.
+
+Common types:
+
+- Max Pooling
+- Average Pooling
+
+---
+
+### 94. What is object detection?
+
+Object detection identifies **what objects are present and where they are located** in an image.
+
+Typical output includes:
+
+- Class
+- Bounding box
+- Confidence score
+
+---
+
+### 95. What is image classification?
+
+Image classification assigns an image to one or more predefined categories.
+
+Example:
+
+**Image → Cat**
+
+---
+
+# 21. NLP
+
+### 96. What is NLP?
+
+NLP stands for **Natural Language Processing**.
+
+It enables computers to process, understand, generate, and interact with human language.
+
+Applications:
+
+- Chatbots
+- Translation
+- Sentiment analysis
+- Text summarization
+- Question answering
+
+---
+
+### 97. What is tokenization?
+
+Tokenization divides text into smaller units called tokens.
+
+Tokens can be:
+
+- Words
+- Subwords
+- Characters
+
+depending on the tokenizer.
+
+---
+
+### 98. What is stemming?
+
+Stemming reduces words to a crude root form by removing prefixes or suffixes.
+
+Example:
+
+**playing → play**
+
+The resulting stem may not always be a valid word.
+
+---
+
+### 99. What is lemmatization?
+
+Lemmatization converts a word to its linguistically correct base form.
+
+Example:
+
+**better → good**
+
+depending on the context and language model.
+
+---
+
+### 100. What are stop words?
+
+Stop words are commonly occurring words that are sometimes removed during traditional NLP preprocessing.
+
+Examples:
+
+- the
+- is
+- a
+- an
+
+However, modern NLP systems do not always remove them.
+
+---
+
+# 22. Word Embeddings
+
+### 101. What is an embedding?
+
+An embedding is a numerical vector representation of an object such as a word, sentence, image, or document.
+
+It attempts to represent meaningful relationships in a continuous vector space.
+
+---
+
+### 102. What is Word2Vec?
+
+Word2Vec is a technique for learning vector representations of words from their surrounding contexts.
+
+---
+
+### 103. What is semantic similarity?
+
+Semantic similarity measures how similar two pieces of information are in meaning.
+
+Embeddings can be compared using measures such as **cosine similarity**.
+
+---
+
+# 23. Transformers
+
+### 104. What is a Transformer?
+
+A Transformer is a neural network architecture based primarily on attention mechanisms rather than recurrent processing.
+
+It is widely used in NLP and modern generative AI.
+
+---
+
+### 105. What is attention?
+
+Attention allows a model to assign different importance to different parts of the input when processing information.
+
+---
+
+### 106. What is self-attention?
+
+Self-attention allows tokens within the same sequence to interact with one another to determine which tokens are important for understanding each token.
+
+---
+
+### 107. What are Query, Key and Value?
+
+In attention:
+
+- **Query (Q)** represents what a token is looking for.
+- **Key (K)** represents what each token offers for matching.
+- **Value (V)** represents the information to be aggregated.
+
+A simplified attention equation is:
+
+**Attention(Q,K,V) = softmax(QKᵀ / √dₖ)V**
+
+---
+
+### 108. What is multi-head attention?
+
+Multi-head attention uses multiple attention mechanisms in parallel so the model can capture different relationships in the data.
+
+---
+
+### 109. What is positional encoding?
+
+Transformers need information about token order.
+
+Positional encoding or positional representations provide information about the position of tokens in a sequence.
+
+---
+
+# 24. Large Language Models
+
+### 110. What is an LLM?
+
+LLM stands for **Large Language Model**.
+
+It is a large neural network trained on substantial amounts of text data to model and generate language.
+
+---
+
+### 111. How does an LLM generate text?
+
+At a high level:
+
+**Input → Tokenization → Embeddings → Transformer processing → Probability distribution → Next-token selection → Generated text**
+
+The process is repeated token by token.
+
+---
+
+### 112. What is a token?
+
+A token is a unit of text processed by a language model.
+
+A token may represent:
+
+- A word
+- Part of a word
+- Punctuation
+- Another subword unit
+
+---
+
+### 113. What is context window?
+
+A context window is the amount of tokenized information a model can consider as context for a particular request.
+
+---
+
+### 114. What is hallucination in AI?
+
+AI hallucination occurs when a model generates information that appears plausible but is incorrect, unsupported, or fabricated.
+
+---
+
+### 115. How can hallucinations be reduced?
+
+Methods include:
+
+- Better prompting
+- Retrieval-Augmented Generation
+- Grounding with trusted data
+- Tool use
+- Verification
+- Better training and evaluation
+
+---
+
+# 25. Generative AI
+
+### 116. What is Generative AI?
+
+Generative AI creates new content based on patterns learned from training data.
+
+It can generate:
+
+- Text
+- Images
+- Audio
+- Video
+- Code
+
+---
+
+### 117. What is a foundation model?
+
+A foundation model is a broadly trained model that can be adapted or used for many downstream tasks.
+
+---
+
+### 118. What is fine-tuning?
+
+Fine-tuning means further training a pretrained model on a more specific dataset or task.
+
+---
+
+### 119. What is prompt engineering?
+
+Prompt engineering is the practice of designing instructions and context to obtain more useful, accurate, and consistent model outputs.
+
+---
+
+### 120. What is zero-shot learning?
+
+Zero-shot learning means performing a task without providing task-specific examples in the prompt.
+
+---
+
+### 121. What is few-shot learning?
+
+Few-shot learning provides a small number of examples in the prompt to demonstrate the desired task.
+
+---
+
+# 26. RAG
+
+### 122. What is RAG?
+
+RAG stands for **Retrieval-Augmented Generation**.
+
+It combines information retrieval with generative AI.
+
+Basic architecture:
+
+**User Query → Retrieval → Relevant Documents → LLM → Answer**
+
+---
+
+### 123. Why is RAG useful?
+
+RAG can:
+
+- Ground answers in external information
+- Use private or domain-specific documents
+- Improve factuality for knowledge-based tasks
+- Reduce dependence on information stored only in model parameters
+
+---
+
+### 124. What is a vector database?
+
+A vector database stores and searches vector embeddings efficiently.
+
+Examples of applications:
+
+- Semantic search
+- RAG
+- Recommendation
+- Similarity search
+
+---
+
+### 125. What is cosine similarity?
+
+Cosine similarity measures the angle between two vectors.
+
+It is commonly used to measure similarity between embeddings.
+
+---
+
+# 27. AI Agents
+
+### 126. What is an AI agent in Generative AI?
+
+A generative AI agent is a system that can use a model together with tools, memory, planning, and external systems to accomplish tasks.
+
+---
+
+### 127. What is tool calling?
+
+Tool calling allows an AI model to request execution of external functions such as:
+
+- Search
+- Database queries
+- Calculations
+- APIs
+- File operations
+
+---
+
+### 128. What is agentic AI?
+
+Agentic AI refers to AI systems designed to perform multi-step tasks by planning, making decisions, using tools, observing results, and continuing toward a goal.
+
+---
+
+# 28. Reinforcement Learning
+
+### 129. What is an agent in reinforcement learning?
+
+An agent is the learner or decision-maker that interacts with the environment.
+
+---
+
+### 130. What is a reward?
+
+A reward is feedback provided to the agent after an action.
+
+The agent attempts to maximize cumulative reward.
+
+---
+
+### 131. What is a policy?
+
+A policy defines how an agent chooses actions based on its current state or observations.
+
+---
+
+### 132. What is Q-learning?
+
+Q-learning is a model-free reinforcement learning algorithm that learns the expected value of taking actions in states.
+
+A commonly used update rule is:
+
+**Q(s,a) ← Q(s,a) + α[r + γ max Q(s',a') − Q(s,a)]**
+
+---
+
+# 29. Generative Models
+
+### 133. What is a GAN?
+
+GAN stands for **Generative Adversarial Network**.
+
+It consists mainly of:
+
+- Generator
+- Discriminator
+
+The generator creates samples, while the discriminator tries to distinguish generated samples from real samples.
+
+---
+
+### 134. What is a diffusion model?
+
+A diffusion model is a generative model that learns to generate data by reversing a gradual noise-adding process.
+
+Diffusion models are widely used in image generation.
+
+---
+
+# 30. AI Ethics
+
+### 135. What is AI ethics?
+
+AI ethics concerns the responsible design, development, deployment, and use of AI systems.
+
+---
+
+### 136. What is AI bias?
+
+AI bias occurs when an AI system produces systematically unfair or skewed outcomes.
+
+Sources can include:
+
+- Biased training data
+- Sampling problems
+- Human decisions
+- Model design
+- Deployment context
+
+---
+
+### 137. What is fairness in AI?
+
+Fairness means designing and evaluating AI systems to avoid unjustified discrimination and unequal treatment.
+
+---
+
+### 138. What is explainable AI?
+
+Explainable AI (XAI) aims to make AI model behavior and predictions understandable to humans.
+
+---
+
+### 139. What is responsible AI?
+
+Responsible AI focuses on developing AI systems that are:
+
+- Safe
+- Fair
+- Transparent
+- Accountable
+- Privacy-aware
+- Reliable
+
+---
+
+### 140. What is AI privacy?
+
+AI privacy concerns protecting personal and sensitive information used, processed, stored, or generated by AI systems.
+
+---
+
+# 31. Advanced Machine Learning
+
+### 141. What is ensemble learning?
+
+Ensemble learning combines multiple models to improve predictive performance or robustness.
+
+Examples:
+
+- Random Forest
+- Gradient Boosting
+- AdaBoost
+- XGBoost
+
+---
+
+### 142. What is boosting?
+
+Boosting builds models sequentially, with later models focusing on correcting errors made by earlier models.
+
+---
+
+### 143. What is bagging?
+
+Bagging trains multiple models on different bootstrap samples and combines their predictions.
+
+Random Forest is a well-known example.
+
+---
+
+### 144. What is cross-validation?
+
+Cross-validation is a model evaluation technique that repeatedly splits data into training and validation portions to estimate generalization performance.
+
+A common method is:
+
+**K-Fold Cross-Validation**
+
+---
+
+### 145. What is hyperparameter tuning?
+
+Hyperparameter tuning means finding suitable values for parameters that are set before or outside the normal model-learning process.
+
+Examples:
+
+- Learning rate
+- Number of trees
+- Tree depth
+- K in KNN
+
+Methods include:
+
+- Grid Search
+- Random Search
+- Bayesian Optimization
+
+---
+
+# 32. MLOps
+
+### 146. What is MLOps?
+
+MLOps combines Machine Learning with software engineering and operations practices to manage the ML lifecycle.
+
+It covers:
+
+- Data
+- Training
+- Evaluation
+- Deployment
+- Monitoring
+- Retraining
+- Versioning
+
+---
+
+### 147. What is model deployment?
+
+Model deployment means making a trained model available for real-world use, such as through:
+
+- Web API
+- Mobile application
+- Cloud service
+- Embedded system
+
+---
+
+### 148. What is model monitoring?
+
+Model monitoring tracks a deployed model's behavior and performance.
+
+It can detect:
+
+- Performance degradation
+- Data drift
+- Concept drift
+- Latency problems
+- Failures
+
+---
+
+### 149. What is data drift?
+
+Data drift occurs when the statistical properties of incoming input data change over time.
+
+---
+
+### 150. What is concept drift?
+
+Concept drift occurs when the relationship between inputs and the target changes over time.
+
+---
+
+# 33. Important Advanced Interview Questions
+
+### 151. What happens if the learning rate is too high?
+
+The model may:
+
+- Overshoot the minimum
+- Oscillate
+- Become unstable
+- Fail to converge
+
+---
+
+### 152. What happens if the learning rate is too low?
+
+Training can become very slow and may require many iterations.
+
+---
+
+### 153. Why is ReLU commonly used?
+
+ReLU is computationally simple and provides non-linearity. Compared with sigmoid/tanh, it often helps reduce vanishing-gradient issues for positive activations.
+
+---
+
+### 154. What is the vanishing gradient problem?
+
+During backpropagation, gradients can become extremely small as they pass through many layers, making early layers learn very slowly.
+
+---
+
+### 155. What is the exploding gradient problem?
+
+Gradients can become extremely large during training, causing unstable parameter updates.
+
+---
+
+### 156. How can vanishing gradients be reduced?
+
+Common techniques include:
+
+- ReLU-like activations
+- Proper initialization
+- Batch normalization
+- Residual connections
+- Appropriate architecture design
+
+---
+
+### 157. What is regularization?
+
+Regularization adds constraints or penalties to discourage overly complex models and reduce overfitting.
+
+Common forms:
+
+- L1
+- L2
+- Dropout
+
+---
+
+### 158. What is L1 regularization?
+
+L1 regularization adds a penalty based on the absolute values of parameters.
+
+It can encourage some parameters to become exactly zero.
+
+---
+
+### 159. What is L2 regularization?
+
+L2 regularization penalizes the squared magnitude of parameters and generally encourages smaller weights.
+
+---
+
+### 160. What is dropout?
+
+Dropout randomly disables a fraction of neurons during training to help reduce overfitting.
+
+---
+
+# 34. Scenario-Based Interview Questions
+
+### 161. Your model has 99% training accuracy but 70% testing accuracy. What is the problem?
+
+This is a strong indication of **overfitting**.
+
+Possible solutions:
+
+- More data
+- Regularization
+- Cross-validation
+- Feature selection
+- Data augmentation
+- Simpler model
+
+---
+
+### 162. Your dataset contains many missing values. What will you do?
+
+First understand why the values are missing.
+
+Then depending on the situation:
+
+- Remove affected rows/columns
+- Mean/median/mode imputation
+- Model-based imputation
+- Add missingness indicators
+
+---
+
+### 163. Your classification dataset is highly imbalanced. What will you do?
+
+Possible approaches:
+
+- Class weights
+- Oversampling
+- Undersampling
+- Synthetic sampling techniques
+- Threshold adjustment
+
+And evaluate using suitable metrics such as:
+
+- Precision
+- Recall
+- F1-score
+- PR-AUC
+
+rather than relying only on accuracy.
+
+---
+
+### 164. How would you build an AI chatbot?
+
+A basic architecture could be:
+
+**User → Frontend → Backend → LLM → Response**
+
+For a knowledge-based chatbot:
+
+**User → Query → Embedding/Retrieval → Relevant Documents → LLM → Response**
+
+Additional components can include:
+
+- Authentication
+- Database
+- Conversation history
+- Safety controls
+- Monitoring
+
+---
+
+### 165. How would you build a document-question-answering system?
+
+Typical RAG pipeline:
+
+**Documents → Chunking → Embeddings → Vector Database → Retrieval → LLM → Answer**
+
+---
+
+### 166. How would you improve a machine-learning model?
+
+A systematic process is:
+
+1. Understand the problem.
+2. Improve data quality.
+3. Perform exploratory data analysis.
+4. Engineer useful features.
+5. Select suitable algorithms.
+6. Tune hyperparameters.
+7. Use cross-validation.
+8. Evaluate using appropriate metrics.
+9. Analyze errors.
+10. Deploy and monitor.
+
+---
+
+# 35. Python and AI Interview Questions
+
+### 167. Why is Python popular in AI?
+
+Python is popular because it has:
+
+- Simple syntax
+- Large ecosystem
+- Extensive ML libraries
+- Strong community
+- Rapid development
+- Excellent data-processing support
+
+---
+
+### 168. Important Python libraries for AI
+
+### Data Science
+- NumPy
+- Pandas
+- Matplotlib
+
+### Machine Learning
+- Scikit-learn
+- XGBoost
+
+### Deep Learning
+- PyTorch
+- TensorFlow
+
+### Computer Vision
+- OpenCV
+
+### NLP / LLM
+- Transformers
+- spaCy
+- NLTK
+
+---
+
+### 169. What is NumPy?
+
+NumPy is a Python library for numerical computing, especially efficient operations on multidimensional arrays.
+
+---
+
+### 170. What is Pandas?
+
+Pandas is a Python library used for data manipulation and analysis.
+
+It provides important structures such as:
+
+- Series
+- DataFrame
+
+---
+
+### 171. What is Scikit-learn?
+
+Scikit-learn is a Python machine-learning library that provides implementations of many algorithms and utilities for:
+
+- Preprocessing
+- Classification
+- Regression
+- Clustering
+- Model selection
+- Evaluation
+
+---
+
+### 172. What is PyTorch?
+
+PyTorch is an open-source machine-learning framework widely used for deep learning and research.
+
+---
+
+# 36. Very Important Interview Differences
+
+### AI vs ML
+
+**AI** is the broader field of building systems that perform intelligent tasks.
+
+**ML** is a subset of AI that learns patterns from data.
+
+---
+
+### ML vs DL
+
+**ML:** Many algorithms can work effectively with engineered features and relatively smaller datasets.
+
+**DL:** Uses multilayer neural networks and often benefits from large datasets and substantial computation.
+
+---
+
+### Classification vs Regression
+
+**Classification → Categorical output**
+
+Example:
+
+`Spam / Not Spam`
+
+**Regression → Continuous output**
+
+Example:
+
+`₹50,000 salary`
+
+---
+
+### Supervised vs Unsupervised Learning
+
+**Supervised → Labeled data**
+
+**Unsupervised → Unlabeled data**
+
+---
+
+### CNN vs RNN
+
+**CNN:** Traditionally strong for spatial data such as images.
+
+**RNN:** Designed for sequential processing, though modern NLP largely uses Transformer architectures instead.
+
+---
+
+### RAG vs Fine-Tuning
+
+**RAG:** Retrieves external information at inference time.
+
+**Fine-tuning:** Changes model parameters through additional training.
+
+RAG is often preferable when information changes frequently or comes from private documents.
+
+---
+
+# 37. Top 20 Questions You Must Know for an AI Interview
+
+If the interviewer asks basic AI questions, be especially prepared for:
+
+1. What is AI?
+2. What is Machine Learning?
+3. What is Deep Learning?
+4. Difference between AI, ML and DL?
+5. Types of Machine Learning?
+6. What is supervised learning?
+7. What is unsupervised learning?
+8. What is reinforcement learning?
+9. What is overfitting?
+10. What is underfitting?
+11. What is a neural network?
+12. What is CNN?
+13. What is NLP?
+14. What is a Transformer?
+15. What is attention?
+16. What is an LLM?
+17. What is Generative AI?
+18. What is RAG?
+19. What is AI hallucination?
+20. What are AI ethics and bias?
+
+---
+
+# 38. One-Line AI Interview Revision
+
+**AI** → Making machines perform intelligent tasks.
+
+**ML** → Learning patterns from data.
+
+**DL** → Machine learning using deep neural networks.
+
+**Supervised Learning** → Learning from labeled data.
+
+**Unsupervised Learning** → Finding patterns in unlabeled data.
+
+**Reinforcement Learning** → Learning through rewards and penalties.
+
+**Regression** → Predicting continuous values.
+
+**Classification** → Predicting categories.
+
+**Clustering** → Grouping similar data.
+
+**CNN** → Neural network commonly used for visual/spatial data.
+
+**NLP** → Processing human language.
+
+**Transformer** → Attention-based neural network architecture.
+
+**LLM** → Large model trained to model and generate language.
+
+**Generative AI** → AI that creates new content.
+
+**RAG** → Retrieval + generation.
+
+**Embedding** → Numerical representation of information.
+
+**Vector Database** → Stores/searches vectors for similarity retrieval.
+
+**Fine-tuning** → Additional training for a specific task/domain.
+
+**Prompt Engineering** → Designing effective model instructions.
+
+**Hallucination** → Unsupported or incorrect generated information.
+
+**Overfitting** → Model learns training data too closely.
+
+**Underfitting** → Model is too simple to learn important patterns.
+
+**Regularization** → Techniques that reduce overfitting.
+
+**MLOps** → Managing ML systems throughout their lifecycle.
+
+**Responsible AI** → Building AI safely, fairly, transparently, and responsibly.
+
+---
+
+## Recommended Learning Order
+
+For going from **zero → AI engineer/interview level**, follow this sequence:
+
+**1. Python**  
+↓  
+**2. Mathematics for AI**  
+↓  
+**3. NumPy + Pandas + Matplotlib**  
+↓  
+**4. Statistics & Probability**  
+↓  
+**5. Machine Learning**  
+↓  
+**6. Scikit-learn**  
+↓  
+**7. Feature Engineering & Model Evaluation**  
+↓  
+**8. Deep Learning**  
+↓  
+**9. PyTorch/TensorFlow**  
+↓  
+**10. Computer Vision + CNN**  
+↓  
+**11. NLP**  
+↓  
+**12. Transformers**  
+↓  
+**13. LLMs**  
+↓  
+**14. Generative AI**  
+↓  
+**15. Prompt Engineering**  
+↓  
+**16. Embeddings + Vector Databases**  
+↓  
+**17. RAG**  
+↓  
+**18. AI Agents + Tool Calling**  
+↓  
+**19. Fine-tuning**  
+↓  
+**20. MLOps + Deployment**  
+↓  
+**21. AI Ethics + Responsible AI**  
+↓  
+**22. Projects + Interview Preparation**
+
+This gives you the **theory foundation from basic AI through modern Generative AI and agentic systems**, which is the right progression for an AI-focused interview.
